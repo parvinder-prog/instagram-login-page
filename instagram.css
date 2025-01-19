@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(155deg, #5864e8, #c52f87, #e6564b, #fda041);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    width: 300px;
+    border: 1px solid #a29e9e;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    
+}
+
+.content img {
+    height: 60px;
+    padding: 10px 0px 20px 0px;
+}
+
+#instagram-logo {
+    height: 80px;
+}
+
+.content input {
+    height: 25px;
+    padding: 5px 15px;
+    width: 100%;
+    border: 1px solid #a29e9e;
+    border-radius: 3px;
+    margin: 5px 0px;
+}
+
+.forgotten-password {
+    width: 100%;
+    text-align: right;
+}
+
+.forgotten-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #605f5f;
+}
+
+.content a {
+    height: 25px;
+    width: 100%;
+    background-color: #02B1E1;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 6px 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.seperator {
+    margin: 20px 0px 10px 0px;
+    column-gap: 18px;
+    color: #605f5f;
+    font-size: 14px;
+}
+
+.seperator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seperator .line {
+    width: 100%;
+    height: 1px;
+    background-color: #605f5f;
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+}
+
+.facebook img {
+    height: 20px;
+}
+
+.facebook p {
+    font-style: 10px;
+    color: #38569e;
+    margin: 10px 0px 10px 8px;
+}
+
+.sign-up {
+    margin-top: 10px;
+    padding: 20px;
+    width: 340px;
+    text-align: center;
+    border: 1px solid #605f5f;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sign-up a {
+    color: #02B1E1;
+    font-weight: bold;
+}
+
+.get-app p {
+    text-align: center;
+    margin: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.buttons img {
+    height: 40px;
+    border-radius: 5px;
+}
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.footer-section span {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.last-text {
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background: none;
+        place-items: center;
+        overflow-y: hidden;
+    }
+
+    .container {
+        padding: 20px;
+        height: 100vh;
+        width: 80%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(155deg, #5864e8, #c52f87, #e6564b, #fda041);
+    }
+
+    #instagram-logo {
+        height: 80px;
+        padding: 30px;
+    }
+
+    .content input {
+        height: 20px;
+        width: 90%;
+        padding: 10px 15px;
+    }
+
+    .content ::placeholder {
+        font-size: 1em;
+        color: #605f5f;
+        font-weight: bold;
+    }
+
+    .content a {
+        padding: 10px 20px;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .forgotten-text {
+        color: #fff;
+    }
+
+    .seperator {
+        color: #fff;
+    }
+
+    .seperator .line {
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        display: block;
+    }
+
+    .facebook p {
+        font-weight: bold;
+    }
+
+    .facebook img {
+        height: 20px;
+    }
+
+    .sign-up {
+        width: 100%;
+        padding: 15px;
+        color: #fff;
+        border: none;
+        background: linear-gradient(155deg, #5864e8, #c52f87, #e6564b, #fda041);
+    }
+
+    .last-text,
+    .footer-section,
+    .buttons,
+    .get-app {
+        display: none;
+    }
+}
